@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    background: #141414;
+    font-family: 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.logo {
+       color: #E50914;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 40px;
+}
+
+header > div > nav > a{
+    color: #AAA;
+    margin-right: 15px;
+}
+
+header > div > nav > a:hover {
+    color: #fff;
+}
+
+header > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.filme-principal {
+    width:100%;
+    font-size: 16px;
+    background: url('../img/flashCapa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #cccccc;
+    height: 400px;
+}
