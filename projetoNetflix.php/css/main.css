@@ -17,12 +17,12 @@ body {
        font-size: 40px;
 }
 
-header > div > nav > a{
+.menu nav > a{
     color: #AAA;
     margin-right: 15px;
 }
 
-header > div > nav > a:hover {
+.menu nav > a:hover {
     color: #fff;
 }
 
@@ -32,13 +32,119 @@ header > .container {
     align-items: center;
 }
 
-.filme-principal {
-    width:100%;
-    font-size: 16px;
-    background: url('../img/flashCapa.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: #cccccc;
-    height: 400px;
+.container {
+    margin-left: 30px;
 }
+
+.menu-drop {
+    display: none;
+}
+
+/* cabeçalho da página    */
+
+.filme-principal {
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/flashCapa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.titulo {
+    margin-top: 15%;
+    font-size: 3rem;
+}
+
+.descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    width: 60%;
+}
+
+.botoes {
+    display: flex;
+}
+
+.botao {
+    display: flex;
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    margin-right: 5px;
+    padding: 7px;
+    align-items: center;
+}
+
+.botao:hover {
+    background-color: #fff;
+    border: none;
+    padding: 7px;
+    color: black;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.botao > svg {
+    margin-right: 10px;
+}
+
+/* ddestaque da página*/
+
+
+@media(max-width: 520px) {
+    nav {
+      display: none;
+    }
+
+    header > .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0px;
+    }
+
+    .menu-drop{
+        display: block;
+        position: absolute;
+        top: 2px;
+        right: 5px;
+        margin: 0px 20px;
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
+
+    .menu-drop:hover{
+        background-color: #fff;
+        color: black;
+        transition: 0.7s;
+
+    }
+
+    .menu:hover nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 40px;
+        right: -15px;
+        background-color: #fff;
+        transition: 0.7s;
+
+    }
+
+    .menu:hover nav  a{
+       padding: 10px;
+       color: black;
+    }
+
+    .menu:hover nav  a:hover{
+        background-color: #AAA;
+     }
+
+}
+
+
