@@ -12,21 +12,21 @@ body {
 }
 
 .logo {
-       color: #E50914;
-       font-family: Arial, Helvetica, sans-serif;
-       font-size: 40px;
+    color: #E50914;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
 }
 
-.menu nav > a{
+.menu nav>a {
     color: #AAA;
     margin-right: 15px;
 }
 
-.menu nav > a:hover {
+.menu nav>a:hover {
     color: #fff;
 }
 
-header > .container {
+header>.container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,11 +40,12 @@ header > .container {
     display: none;
 }
 
+
 /* cabeçalho da página    */
 
 .filme-principal {
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/flashCapa.jpg');
+    background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('../img/flashCapa.jpg');
     background-size: cover;
     background-position: center;
     height: 400px;
@@ -57,7 +58,7 @@ header > .container {
     font-size: 3rem;
 }
 
-.descricao{
+.descricao {
     margin-top: 10px;
     margin-bottom: 40px;
     width: 60%;
@@ -69,7 +70,7 @@ header > .container {
 
 .botao {
     display: flex;
-    background-color: rgba(0,0,0,.50);
+    background-color: rgba(0, 0, 0, .50);
     border: none;
     color: #fff;
     font-size: 10px;
@@ -88,26 +89,30 @@ header > .container {
     transition: 1s;
 }
 
-.botao > svg {
+.botao>svg {
     margin-right: 10px;
 }
 
+
 /* ddestaque da página*/
 
+.filme {
+    height: 100%;
+    width: 100%;
+    display: block;
+}
 
 @media(max-width: 520px) {
     nav {
-      display: none;
+        display: none;
     }
-
-    header > .container {
+    header>.container {
         display: flex;
         justify-content: center;
         align-items: center;
         margin-left: 0px;
     }
-
-    .menu-drop{
+    .menu-drop {
         display: block;
         position: absolute;
         top: 2px;
@@ -117,14 +122,11 @@ header > .container {
         width: 40px;
         border-radius: 50%;
     }
-
-    .menu-drop:hover{
+    .menu-drop:hover {
         background-color: #fff;
         color: black;
         transition: 0.7s;
-
     }
-
     .menu:hover nav {
         display: flex;
         flex-direction: column;
@@ -133,18 +135,14 @@ header > .container {
         right: -15px;
         background-color: #fff;
         transition: 0.7s;
-
     }
-
-    .menu:hover nav  a{
-       padding: 10px;
-       color: black;
+    .menu:hover nav a {
+        padding: 10px;
+        color: black;
     }
-
-    .menu:hover nav  a:hover{
+    .menu:hover nav a:hover {
         background-color: #AAA;
-     }
-
+        border-top: 1px solid rgb(104, 102, 102);
+        border-bottom: 1px solid rgb(104, 102, 102);
+    }
 }
-
-
